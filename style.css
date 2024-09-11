@@ -1,0 +1,71 @@
+/*
+Theme Name: My PHP Theme 2024
+Author: Enno Hyttrek
+Version: 1.1
+*/
+
+
+/*------------------
+RESET
+------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*------------------
+LAYOUT
+------------------*/
+
+.container {
+    max-width: 1000px;
+    margin: 00 auto;
+    padding: 1rem 16px;
+}
+
+main {
+    min-height: 70vh;
+}
+
+
+/*------------------
+COLOR & STYLE
+------------------*/
+
+body {
+    background: hsl(200,21%,13%);
+}
+
+
+header a,
+header {
+      background: hsl(200,21%,42%);
+        color: #fff;
+}
+
+main {
+background: #fff;
+}
+
+footer a,
+footer {
+    color: #fff;
+}
+
+
+
+
+
+/*------------------
+TYPOGRAPHY
+------------------*/
+
+
+body {
+    font-family: Arial, sans-serif;
+}
