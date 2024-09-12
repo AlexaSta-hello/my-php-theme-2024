@@ -32,10 +32,33 @@ main {
     min-height: 70vh;
 }
 
+/*------------------
+NAVIGATION
+------------------*/
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* nur die erste Hierarchie der ul nach dem div! nicht die wieteren.*/
+.nav-bar > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 
 /*------------------
 COLOR & STYLE
 ------------------*/
+
+a:hover, a:active {
+    color: rgb (255, 128, 0);
+}
 
 body {
     background: hsl(200,21%,13%);
