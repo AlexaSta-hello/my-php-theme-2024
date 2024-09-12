@@ -11,6 +11,7 @@
             <p>© 2024 Enno Hyttrek</p>
         </div>
     </footer>
+    </div> <!-- .main-wrapper -->
     <?php wp_footer() ?>
 </body>
 

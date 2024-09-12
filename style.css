@@ -22,6 +22,7 @@ RESET
 LAYOUT
 ------------------*/
 
+.main-nav > div,
 .container {
     max-width: 1000px;
     margin: 00 auto;
@@ -44,6 +45,11 @@ nav a {
     text-decoration: none;
 }
 
+.nav-bar > div {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
 /* nur die erste Hierarchie der ul nach dem div! nicht die wieteren.*/
 .nav-bar > div > ul {
     display: flex;
@@ -64,11 +70,20 @@ body {
     background: hsl(200,21%,13%);
 }
 
+body.page-id-23 main {
+    background-color: red;
+}
 
+.main-nav, 
 header a,
 header {
       background: hsl(200,21%,42%);
         color: #fff;
+}
+
+.main-nav a,
+header a {
+    color: #fff; 
 }
 
 main {
