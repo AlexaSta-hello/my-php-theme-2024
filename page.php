@@ -1,6 +1,5 @@
 <?php get_header(); ?>
         <div class="container">
-            <p class="template-flag">Dies ist das Page Template</p>
             
             <?php
                 if ( have_posts() ) :

@@ -6,13 +6,18 @@ Version: 1.1
 
 
 /*------------------
-RESET
+RESET: macht erst mal alles auf null
 ------------------*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -22,15 +27,29 @@ RESET
 LAYOUT
 ------------------*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1em;
+}
+
 .main-nav > div,
 .container {
-    max-width: 1000px;
-    margin: 00 auto;
-    padding: 1rem 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 16px;
 }
 
 main {
     min-height: 70vh;
+}
+
+article {
+    margin-bottom: 1em;
 }
 
 /*------------------
@@ -98,7 +117,26 @@ footer {
 RESPONSIV
 ------------------*/
 
+
+
+@media only screen and (min-width: 580px) {
+
+    .container.my-blog-template {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .container.my-blog-template article {
+        width: 50%;
+        padding: 8px;
+    }
+
+}
+
+
+
 @media only screen and (min-width: 960px) {
+
     body.post-template-default main > .container {
         display: flex;
     }
@@ -110,6 +148,11 @@ RESPONSIV
     body.post-template-default main > .container aside {
         width: 30%;
         padding-left: 1rem;
+
+    }
+    
+        .container.my-blog-template article {
+        width: 33.33%;
     }
 }
 

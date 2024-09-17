@@ -6,7 +6,7 @@ function myphp2024_stylesheets() {
 }
 add_action( 'wp_enqueue_scripts', 'myphp2024_stylesheets' );
 
-
+// Register Menus
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -45,3 +45,9 @@ function register_my_menus() {
 }
 
 add_action ('widgets_init', 'register_my_widgets');
+
+/* bewirkt, dass unter Beitrag bearbeiten ein Button angezeigt wird,
+mit dem ich ein Beitragsbild (Startseite) festlegen kann, 
+das aber nicht im Beitrag auftaucht. Damit das Beitragsbild auch 
+angezeigt wird -> function in ondex.php aufrufen*/
+add_theme_support('post-thumbnails'); // auf der index
