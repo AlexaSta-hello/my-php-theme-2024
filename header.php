@@ -13,6 +13,10 @@
             
             <h1><?php bloginfo('title'); ?></h1>
 
+            <aside class="header-sidebar">
+                <?php dynamic_sidebar ('header-widgets'); ?>
+            </aside>
+
             </div>   
             
     </header>

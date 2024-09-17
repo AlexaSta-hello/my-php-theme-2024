@@ -74,8 +74,7 @@ body.page-id-23 main {
     background-color: red;
 }
 
-.main-nav, 
-header a,
+.main-nav,
 header {
       background: hsl(200,21%,42%);
         color: #fff;
@@ -95,7 +94,24 @@ footer {
     color: #fff;
 }
 
+/*------------------
+RESPONSIV
+------------------*/
 
+@media only screen and (min-width: 960px) {
+    body.post-template-default main > .container {
+        display: flex;
+    }
+
+    body.post-template-default main > .container article {
+        width: 70%;
+    }
+
+    body.post-template-default main > .container aside {
+        width: 30%;
+        padding-left: 1rem;
+    }
+}
 
 
 

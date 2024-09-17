@@ -1,6 +1,9 @@
 <?php get_header(); ?>
         <div class="container">
+
             <p class="template-flag">Dies ist das Single Template</p>
+
+            <article class="my-post-content">
             
             <?php
                 if ( have_posts() ) :
@@ -16,6 +19,12 @@
                 endwhile;
             endif;
             ?>
+            </article>
+
+            <aside class="post-sidebar">
+                <?php dynamic_sidebar ('side-widgets'); ?>
+            </aside>
+
         </div>
         
  <?php get_footer(); ?>   
