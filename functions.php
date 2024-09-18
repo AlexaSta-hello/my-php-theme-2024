@@ -3,7 +3,9 @@
 
 function myphp2024_stylesheets() {
     wp_enqueue_style( 'style', get_stylesheet_uri());
+    wp_enqueue_style( 'work-sans-font', get_template_directory_uri() . '/assets/fonts/work-sans/font-style.css' );
 }
+
 add_action( 'wp_enqueue_scripts', 'myphp2024_stylesheets' );
 
 // Register Menus
@@ -20,7 +22,7 @@ function register_my_menus() {
  add_action( 'init', 'register_my_menus' );
 
  // Register Widgets
- function register_my_widgets() {
+function register_my_widgets() {
 
   register_sidebar (array (
     'name'    => 'Header Widgets',
