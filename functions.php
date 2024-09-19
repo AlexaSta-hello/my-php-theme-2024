@@ -38,11 +38,10 @@ function register_my_widgets() {
       'after_widget'    => '</div>',
   ));
 
+  // hier haben wir die <div>s mit "Gruppe" im WP-Backend gelöst.
   register_sidebar (array (
     'name'    => 'Sidebar Widgets',
-    'id'      => 'side-widgets',
-    'before_widget'   => '<div>',
-    'after_widget'    => '</div>',
+    'id'      => 'side-widgets'
   ));
 }
 

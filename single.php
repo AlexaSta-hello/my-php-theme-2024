@@ -1,8 +1,6 @@
 <?php get_header(); ?>
         <div class="container">
 
-            <p class="template-flag">Dies ist das Single Template</p>
-
             <article class="my-post-content">
             
             <?php
@@ -10,15 +8,16 @@
                     while ( have_posts() ) : the_post();
             ?>
 
-            <h2 class="my-post-title">
-                <?php the_title(); ?>
-            </h2>
+                <h2 class="my-post-title">
+                    <?php the_title(); ?>
+                </h2>
 
-            <?php
-                    the_content();
+                <?php
+                        the_content();
                 endwhile;
-            endif;
+                endif;
             ?>
+
             </article>
 
             <aside class="post-sidebar">

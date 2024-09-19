@@ -168,23 +168,26 @@ RESPONSIV
 
 }
 
-
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 
     body.post-template-default main > .container {
         display: flex;
     }
 
     body.post-template-default main > .container article {
-        width: 70%;
+        width: 69%;
     }
 
     body.post-template-default main > .container aside {
-        width: 30%;
-        padding-left: 1rem;
+        width: 29%;
+        padding-left: 2rem;
 
     }
+}
+
+
+
+@media only screen and (min-width: 992px) {
     
         .container.my-blog-template article {
         width: 33.33%;
